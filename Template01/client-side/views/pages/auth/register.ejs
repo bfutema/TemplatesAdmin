@@ -1,0 +1,59 @@
+<body>
+    <div id="hexagon-background" class="hexagon-background">
+        <div class="login-container">
+            <form action="/auth/register" method="POST" class="login-form validate-form">
+                <span class="login-form-title">Registrar</span>
+    
+                <div class="wrap-input validate-input" data-validate="Nome de usuário obrigatório!">
+                    <input id="Username" class="input" type="text" name="username" placeholder="Nome de usuário">
+                    <span class="focus-input"></span>
+                    <span class="symbol-input">
+                        <span class="lnr lnr-user"></span>
+                    </span>
+                </div>
+
+                <div class="wrap-input validate-input" data-validate="Digite um e-mail válido: ex@abc.xyz">
+                    <input id="Email" class="input" type="text" name="email" placeholder="E-mail">
+                    <span class="focus-input"></span>
+                    <span class="symbol-input">
+                        <span class="lnr lnr-envelope"></span>
+                    </span>
+                </div>
+    
+                <div class="wrap-input validate-input" data-validate="Senha obrigatória!">
+                    <input id="Senha" class="input" type="password" name="password" placeholder="Senha" autocomplete="off">
+                    <span class="focus-input"></span>
+                    <span class="symbol-input">
+                        <span class="lnr lnr-lock"></span>
+                    </span>
+                </div>
+
+                <div class="wrap-input validate-input" data-validate="Confirmar a senha é obrigatório!">
+                    <input id="ConfirmarSenha" class="input" type="password" name="confirmPassword" placeholder="Confirme sua senha" autocomplete="off">
+                    <span class="focus-input"></span>
+                    <span class="symbol-input">
+                        <span class="lnr lnr-lock"></span>
+                    </span>
+                </div>
+    
+                <div class="login-container-form-btn">
+                    <button class="login-form-btn">
+                        Criar conta
+                    </button>
+                </div>
+    
+                <div class="text-center w-full login-container-footer">
+                    <a class="txt1 bo1 hov1" href="/auth/login">
+                        Voltar
+                    </a>
+                </div>
+    
+            </form>
+        </div> <!-- login-container -->
+    </div>
+    <script src="/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="/lib/bootstrap/js/popper.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/hexagon.js"></script>
+    <script src="/js/userManager.js"></script>
+</body>
