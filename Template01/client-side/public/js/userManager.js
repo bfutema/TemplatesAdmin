@@ -1,6 +1,11 @@
 (function ($) {
     "use strict";
 
+    $(document).ready(function () {
+        $('#Email').val('bruno3.futema@outlook.com');
+        $('#Senha').val('123456');
+    });
+
     var input = $('.validate-input .input');
 
     $('.validate-form').on('submit', function () {
